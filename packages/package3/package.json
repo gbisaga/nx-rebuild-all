@@ -1,0 +1,16 @@
+{
+  "name": "@ps-refarch/nxpackage3",
+  "version": "0.0.1",
+  "description": "nx package3",
+  "author": "Debasish Samantaray <debasish.samantaray@powerschool.com>",
+  "license": "@PS",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ps-refarch/nxpackage1": "0.0.1"
+  },
+  "gitHead": "sample"
+}
