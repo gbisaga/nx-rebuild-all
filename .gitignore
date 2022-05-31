@@ -4,6 +4,13 @@
 /dist
 /tmp
 /out-tsc
+coverage
+dist
+*.js
+!jest.config.js
+*.js.map
+*.d.ts
+*.log
 
 # dependencies
 node_modules

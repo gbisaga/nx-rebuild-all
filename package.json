@@ -1,29 +1,34 @@
 {
   "name": "nx",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.0.1",
+  "license": "@PS",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
   "scripts": {
     "build:all": "nx run-many --target=build --all",
+    "clean:all": "nx run-many --target=clean --all",
     "build:package1": "nx build @ps-refarch/nxpackage1",
     "build:package2": "nx build @ps-refarch/nxpackage2",
     "build:package3": "nx build @ps-refarch/nxpackage3",
     "build:since": "nx affected --target=build",
     "test:all": "nx run-many --target=test --all",
-    "test:app1": "nx test app1",
+    "test:package1": "nx test @ps-refarch/nxpackage1",
     "test:since": "nx affected --target=test",
     "dev": "nx run-many --target=dev --all",
     "dev:app1": "nx dev app1"
   },
-  "private": true,
   "dependencies": {},
   "devDependencies": {
-    "nx": "14.1.9",
     "@nrwl/cli": "14.1.7",
     "@nrwl/workspace": "14.1.7",
-    "typescript": "~4.6.2",
-    "prettier": "^2.5.1"
-  },
-  "workspaces": [
-    "packages/**"
-  ]
+    "@types/jest": "^27.5.1",
+    "del-cli": "^4.0.1",
+    "jest": "^28.1.0",
+    "nx": "14.1.9",
+    "prettier": "^2.5.1",
+    "ts-jest": "^28.0.3",
+    "typescript": "~4.6.2"
+  }
 }

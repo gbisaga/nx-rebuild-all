@@ -6,8 +6,9 @@
   "license": "@PS",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "tsc"
+    "test": "jest --no-cache",
+    "build": "tsc",
+    "clean": "del-cli coverage dist lib/*.js lib/*.js.map test/*.js test/*.js.map"
   },
   "gitHead": "sample"
 }
