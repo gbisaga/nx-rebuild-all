@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build:all": "nx run-many --target=build --all",
+    "clean": "del-cli coverage dist node_modules",
     "clean:all": "nx run-many --target=clean --all",
     "build:package1": "nx build @ps-refarch/nxpackage1",
     "build:package2": "nx build @ps-refarch/nxpackage2",
