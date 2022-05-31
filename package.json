@@ -17,8 +17,6 @@
     "test:all": "nx run-many --target=test --all",
     "test:package1": "nx test @ps-refarch/nxpackage1",
     "test:since": "nx affected --target=test",
-    "dev": "nx run-many --target=dev --all",
-    "dev:app1": "nx dev app1"
   },
   "dependencies": {},
   "devDependencies": {
