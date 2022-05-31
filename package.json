@@ -16,7 +16,7 @@
     "build:since": "nx affected --target=build",
     "test:all": "nx run-many --target=test --all",
     "test:package1": "nx test @ps-refarch/nxpackage1",
-    "test:since": "nx affected --target=test",
+    "test:since": "nx affected --target=test"
   },
   "dependencies": {},
   "devDependencies": {
